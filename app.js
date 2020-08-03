@@ -45,26 +45,11 @@ App({
   },
 
   login:function(){
-    var that = this;
-    wx.login({
-      success: function (res) {
-        wx.getUserInfo({
-          success: function(userinfo){
-            util.req('user/login', {
-              "code": res.code,
-              "encryptedData": userinfo.encryptedData,
-              "iv": userinfo.iv
-               }, function (data) {
-                 that.setUserInfo(data.user);
-                 that.setSk(data.sk);
-            })
-          },
-          fail: function(res) {
-            that.loginFail();
-          }
-        })
-      }
+
+    wx.reLaunch({
+      url: '/pages/toLogin/toLogin'
     })
+    
   } ,
 
   loginFail: function () {
