@@ -38,7 +38,7 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: '同城拼车',
+      title: '柠檬🚗',
       path: 'pages/index/index'
     }
   },

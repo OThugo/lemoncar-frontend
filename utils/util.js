@@ -15,16 +15,15 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n  
 }  
 
-  
-var rootDocment = 'https://xcx.codems.cn/api/';
+var rootDocment = 'http://lemoncar.gearhostpreview.com/api/';
 
 var wxAppinfo = {
-  'name': '同城拼车',
+  'name': '柠檬🚗',
   'logo': 'https://wx.qlogo.cn/mmhead/Q3auHgzwzM41GbicIwic6JOHzehVqd3OubV4GmEQA67KRXyoZ3Y6maHg/0'
 };
 
 //修改成你的appid及appsecret
-var AppConf = { 'appid': 'wx0aa456241abc9e8e', 'appsecret':'cb10ea69158ef5c786c9e39cf6ea478f'};
+var AppConf = { 'appid': 'wx79e3746d77558308', 'appsecret':'8aae84f3dc6e054bf7fcbaae199b8f83'};
 
 function req(url, data, cb) {
   data.appid = AppConf.appid;
